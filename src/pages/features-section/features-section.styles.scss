@@ -1,0 +1,36 @@
+.features-section {
+  background: #f9f9ff;
+  padding: 100px 0px;
+
+  .svg-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    div {
+      svg {
+        margin-left: 10px;
+      }
+    }
+  }
+  .pointer {
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 790px) {
+    .svg-items {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      div {
+        margin-top: 15px;
+      }
+
+      .pointer {
+        display: none;
+      }
+    }
+  }
+}

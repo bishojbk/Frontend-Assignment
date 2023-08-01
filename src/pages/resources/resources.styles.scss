@@ -1,0 +1,125 @@
+.resources-section {
+  padding: 100px 0px;
+  background-color: rgb(249, 249, 255);
+
+  &_header {
+    text-align: center;
+    h2 {
+      font-size: 32px;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 20px;
+      color: var(--gray-500, #667085);
+      margin-left: 280px;
+      margin-right: 280px;
+      margin-top: 20px;
+    }
+
+    @media screen and (max-width: 790px) {
+      p {
+        margin: 0px;
+      }
+    }
+  }
+
+  &_items {
+    .grid-items {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+
+      .details {
+        padding: 30px;
+        border-radius: 21.83px;
+        background: var(--neutral-colors-white, #fff);
+
+        &:first-child {
+          img {
+            background: rgb(248, 241, 255);
+            padding: 14px;
+            border-radius: 18.191px;
+          }
+        }
+
+        &:nth-child(2) img {
+          background: rgb(243, 246, 255);
+          padding: 14px;
+          border-radius: 18.191px;
+        }
+
+        &:last-child img {
+          background: rgb(252, 240, 236);
+          padding: 14px;
+          border-radius: 18.191px;
+        }
+
+        span {
+          margin-left: 10px;
+          color: var(--neutral-n-70, #66686d);
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 27px;
+        }
+      }
+
+      h3 {
+        margin-top: 25px;
+        font-size: 24px;
+        font-weight: 600;
+        color: var(--neutral-n-100, #24272e);
+        line-height: 36px;
+      }
+
+      p {
+        color: var(--neutral-n-60, #7c7d82);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+    button {
+      margin-top: 20px;
+      border: none;
+      outline: none;
+      background: transparent;
+      color: var(--secondary-teal, #1d6fa3);
+      font-weight: 600;
+
+      svg {
+        margin-left: 5px;
+      }
+    }
+  }
+  .button {
+    text-align: center;
+    margin-top: 30px;
+
+    button {
+      outline: none;
+      border-radius: 4px;
+      border: 1px solid var(--secondary-teal, #1d6fa3);
+      padding: 10px 16px;
+      font-weight: 600;
+      background: transparent;
+      transition: all 1s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  @media screen and (max-width: 790px) {
+    .resources-section_items {
+      margin-top: 20px;
+      .grid-items {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+}
