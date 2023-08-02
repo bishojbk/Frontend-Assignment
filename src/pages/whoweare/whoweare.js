@@ -40,25 +40,25 @@ const Whoweare = () => {
           </div>
 
           <div className="col-lg-7 who-section_images">
-            <div className="images-section">
+            <div className="images-section image1">
               <img src={Image1} alt="adriana"></img>
-              <h3>Adriana Homolova</h3>
             </div>
+            <h3>Adriana Homolova</h3>
 
-            <div className="images-section">
+            <div className="images-section image2 ">
               <img src={Image2} alt="sandor"></img>
-              <h3>Sandor Lederer</h3>
             </div>
+            <h3 className="name2">Sandor Lederer</h3>
 
-            <div className="images-section">
+            <div className="images-section image3">
               <img src={Image3} alt="karolis"></img>
-              <h3>Karolis Granickas</h3>
             </div>
+            <h3>Karolis Granickas</h3>
 
-            <div className="images-section">
+            <div className="images-section image4">
               <img src={Image4} alt="zara"></img>
-              <h3>Zara Montgomery</h3>
             </div>
+            <h3 className="name4">Zara Montgomery</h3>
           </div>
         </div>
       </div>

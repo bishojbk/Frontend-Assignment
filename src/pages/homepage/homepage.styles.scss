@@ -179,7 +179,37 @@
     }
   }
 
-  .homepage-section.hidden {
-    background-color: rgb(40, 39, 39);
+  @media screen and (max-width: 790px) {
+    .search-icon {
+      .searchitem {
+        position: relative;
+
+        .searchbar {
+          display: flex;
+          align-items: center;
+          position: fixed;
+          top: 150px;
+          left: 10px;
+          background-color: white;
+          padding: 15px;
+          border-radius: 10px;
+          width: 340px;
+          pointer-events: none;
+
+          span {
+            margin-left: 10px;
+            color: #62696f;
+            line-height: 20px;
+            pointer-events: none;
+          }
+        }
+
+        .cross {
+          position: absolute;
+          top: 70px;
+          left: 10px;
+        }
+      }
+    }
   }
 }
